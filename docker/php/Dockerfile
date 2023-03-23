@@ -39,7 +39,7 @@ ENV HOST_SERVER_MOSQUITTO_PORT ${HOST_SERVER_MOSQUITTO_PORT}
 ENV HOST_SERVER_MOSQUITTO_PORT_TLS ${HOST_SERVER_MOSQUITTO_PORT_TLS}
 ENV HOST_SERVER_NAME ${HOST_SERVER_NAME}
 
-RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get install -my wget gnupg
+RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get install -my wget gnupg php8.1
 
 # here is the installation NodeJS and Bower
 #RUN curl -s https://deb.nodesource.com/setup_6.x | bash -
